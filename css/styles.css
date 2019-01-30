@@ -1,91 +1,255 @@
-/*
-  DIAGNOSTIC STYLING
-*/
-body {
-  background: gray;
+/* layout grid */
+html {
+  scroll-behavior: smooth;
+  font-family: "Josefin Sans", sans-serif;
 }
-
-* {
-  outline: 1px dotted black;
-}
-
-/************
-LAYOUT
-************/
 body {
-  /* Center to Page   */
-  margin: 0 auto;
-  max-width: 56em;
-  padding: 1em 0;
-  
-  /* CSS Grid Layout   */
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 1em;
+  background: url(https://wallpapertag.com/wallpaper/full/9/b/b/786986-gorgerous-lotr-background-2560x1600-for-iphone-6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  top: 0;
+  left: 50px;
 }
-
-header,
-footer {
-  grid-column: 1 / span 5;
-}
-
 main {
-  grid-column: 1 / span 3;
+  margin: 0px 0px 0px 75px;
 }
-
-aside {
-  grid-column: span 2;
+header {
+  width: 100%;
+  height: 100vh;
 }
-
-
-/************
-HEADER
-************/
-/* Your Styles */
-
-
-/************
-MOVIE TRAILER w/ MEDIA ELEMENT PLAYER
-************/
-/* Fit <video> to container */
-video {
-  max-width: 100%;
-}
-
-.mejs__currenttime, 
-.mejs__duration {
-  font-size: 18px;
-}
-
-.mejs__time-current {
-  background: tomato;
-}
-
-/************
-ACTORS
-************/
-main section { 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/************
-FOOTER
-************/
 footer {
-  text-align: center;
+  height: 10vw;
+  background: #300;
+  margin: 0px 0px 0px 75px;
+}
+.aside {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  background: #600;
+  display: grid;
+  grid-template-rows: repeat(5, 20vh);
+  padding: 0px 0px;
+  width: 50px;
+}
+.aside a {
+  color: wheat;
+  font-size: 1.5em;
+  text-decoration: none;
+  justify-self: center;
+  align-self: center;
+  display: inline-block;
+  writing-mode: vertical-lr;
+}
+.asideTabs {
+  z-index: -1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  display: grid;
+  grid-template-rows: repeat(5, 20vh);
+  padding: 0px 0px;
+  width: 50px;
+}
+.fade {
+  width: 75px;
+  height: 100%;
+  background: #200;
 }
 
-/************
-RWD
-************/
 @media (max-width: 700px) {
-
   main,
   aside {
-    grid-column: 1 / span 5;
   }
-  
 }
+
+/* /layout grid */
+
+
+
+/* video */
+.mejs__time {
+  font-size: 15px;
+}
+.mejs__poster,
+.mejs__layer,
+.mejs__overlay,
+.mejs__overlay-play,
+.mejs__container,
+.mejs__video {
+  width: 700px;
+  height: 400px;
+}
+div.mejs__overlay,
+div.mejs__container {
+  width: 100%;
+  height: 500px;
+}
+.mejs__time-current {
+  background: orange;
+  height: 10px;
+}
+video {
+  width: 100%;
+  max-height: 100%;
+}
+.mejs__button button {
+  background: black;
+}
+/* /video */
+
+
+
+/* synopsis */
+#synopsis{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-gap: 30px;
+  background: #400;
+  padding: 100px;
+}
+.poster{
+  background: url(https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg) 50% 50%;
+  background-size: cover;
+  height: 400px;
+  width: 275px;
+  justify-self: right;
+}
+.summary{
+  justify-self: left
+}
+#synopsis .char1,
+#synopsis .char5,
+#synopsis .char17 {
+  position: relative;
+  font-size: 1.5em;
+  top: 0.2em;
+}
+#synopsis .char5,
+#synopsis .char17 {
+  margin-right: -7px;
+}
+#synopsis .char4,
+#synopsis .char9,
+#synopsis .char12,
+#synopsis .char16 {
+  margin-right: 5px;
+}
+#synopsis h1 {
+  text-align: center;
+  color: wheat;
+  font-family: "EB Garamond", serif;
+}
+#synopsis p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: wheat;
+  line-height: 1.5em;
+}
+.tag {
+  text-align: right;
+  padding-top: 10px;
+}
+/* /synopsis */
+
+
+
+/* castInfo */
+#castInfo {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 10% 90%;
+  background: #400;
+  margin-bottom: 0;
+}
+#castInfo h1 {
+  grid-column: 1 / span 2;
+  text-align: center;
+  color: wheat;
+  font-family: "EB Garamond", serif;
+}
+.cast {
+  padding: 25px;
+  color: lightgray;
+  text-align: right;
+}
+.cast h3,
+.cast h5 {
+  margin: 5px 0px;
+}
+.castcolor2 {
+  color: wheat;
+}
+.frodo,
+.gandalf,
+.bilbo,
+.aragorn {
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+  margin: 10px 0px;
+}
+.castBio {
+  overflow: hidden;
+  color: wheat;
+  max-width: 600px;
+  height: 90vh;
+  padding: 25px;
+}
+.castBio div {
+  background-size: cover;
+  height: 500px;
+  width: 500px;
+}
+.castBio h2 {
+  margin-bottom: 5px;
+}
+.castBio h4 {
+  margin-top: 0px;
+}
+.castBio p {
+  line-height: 1.5em;
+}
+.castBio a {
+  color: #f5de50;
+  text-decoration: none;
+}
+.ianImg {
+  background: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/11/27/10/gandalf-ian-mckellen.jpg)
+    no-repeat 50% 50%;
+}
+.eliImg {
+  background: url(https://www.syfy.com/sites/syfy/files/styles/1200x680/public/wire/legacy/images/frodoandtheonering.jpg)
+    no-repeat 50% 50%;
+}
+.viggoImg {
+  background: url(https://assets1.ignimgs.com/2018/06/19/aragorn-1529432894864_1280w.jpg)
+    no-repeat 50% 50%;
+}
+.holmImg {
+  background: url(http://reasonish.com/wp-content/uploads/2017/10/Ian-Holm-Bilbo.jpg)
+    no-repeat 50% 50%;
+}
+/* /castInfo */
+
+
+
+/* tickets */
+#tickets {
+  background: #400;
+  color: wheat;
+  padding: 50px;
+  text-align: center;
+}
+#tickets a {
+  text-decoration: none;
+  color: #3478c1;
+}
+
+/* /tickets */

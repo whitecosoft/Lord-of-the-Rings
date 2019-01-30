@@ -18,4 +18,54 @@ console.log('OK');
 * Reference: https://github.com/mediaelement/mediaelement/blob/master/docs/usage.md
 */
 
-$('video').mediaelementplayer();
+// video
+$("video").mediaelementplayer();
+//  /video
+
+
+// aside
+AOS.init({
+  duration: 1200
+});
+// /aside
+
+
+// Headers
+$("#synopsis h1").lettering("letters");
+$("#castInfo h1").lettering("letters");
+// /Headers
+
+
+// cast info
+$(".frodo").addClass("castcolor2");
+$(".ian").hide();
+$(".viggo").hide();
+$(".holm").hide();
+
+$(".frodo").click(function() {
+  $(".viggo, .holm, .ian").hide();
+  $(".eli").fadeIn("slow");
+  $(".frodo").addClass("castcolor2");
+  $(".aragorn, .bilbo, .gandalf").removeClass("castcolor2");
+});
+$(".gandalf").click(function() {
+  $(".viggo, .holm, .eli").hide();
+  $(".ian").fadeIn("slow");
+  $(".gandalf").addClass("castcolor2");
+  $(".bilbo, .frodo, .aragorn").removeClass("castcolor2");
+});
+$(".aragorn").click(function() {
+  $(".ian, .holm, .eli").hide();
+  $(".viggo").fadeIn("slow");
+  $(".aragorn").addClass("castcolor2");
+  $(".bilbo, .gandalf, .frodo").removeClass("castcolor2");
+});
+$(".bilbo").click(function() {
+  $(".viggo, .ian, .eli").hide();
+  $(".holm").fadeIn("slow");
+  $(".bilbo").addClass("castcolor2");
+  $(".aragorn, .frodo, .gandalf").removeClass("castcolor2");
+});
+// /cast info
+
+
