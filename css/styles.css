@@ -73,13 +73,23 @@ footer {
 
 /* video */
 
-video {
-  max-width: 100%;
-}
+
 
 .mejs__currenttime, 
 .mejs__duration {
   font-size: 16px;
+}
+.mejs__overlay, .mejs__layer{
+  height: 90vh !important;
+  width: 90vw !important;
+}
+.mejs__mediaelementplayer, .mejs__container, video{
+  height: 90vh !important;
+  width: 90vw !important;
+}
+#trailer{
+  max-width: 100%;
+  max-height: 100vh;
 }
 
 /* /video */

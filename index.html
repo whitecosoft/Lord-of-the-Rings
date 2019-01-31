@@ -20,10 +20,11 @@
 
 <!-- Normalize CSS via CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-<!-- Required Plugin Stylesheets -->    
+<!-- Required Plugin Stylesheets --> 
+<!-- Mediaelement CSS -->
     <link rel="stylesheet" href="css/mediaelement.css">
 <!-- AOS CSS -->
-<link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/aos.css">
 <!-- My Awesome Styling -->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -35,11 +36,12 @@
   </header>
 
   <main>
-  
-    <video id="trailer">
-      <source src="video/trailer.mp4">
-      <source src="video/trailer.webm">
-    </video>
+    <section id="trailer">
+      <video>
+        <source src="video/trailer.mp4">
+        <source src="video/trailer.webm">
+      </video>
+    </section>
 
     <section id="synopsis">
       <div class="poster"></div>
@@ -143,6 +145,7 @@
 
 <!-- jQuery Library via CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.9/mediaelement.min.js"></script>
 <!-- Plugins(s) -->
     <script src="js/lettering.js"></script>
     <script src="js/mediaelement.js"></script>
