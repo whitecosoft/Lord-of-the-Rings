@@ -131,7 +131,10 @@ video {
 }
 #synopsis .char5,
 #synopsis .char17 {
-  margin-right: -3px;
+  margin-right: -5px;
+}
+#synopsis .char1{
+  margin-right: 3px;
 }
 #synopsis .char4,
 #synopsis .char9,
