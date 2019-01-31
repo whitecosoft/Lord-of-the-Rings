@@ -26,6 +26,11 @@ footer {
   background: #300;
   margin: 0px 0px 0px 75px;
 }
+
+/* /layout grid */
+
+
+/* Aside */
 .aside {
   position: fixed;
   top: 0px;
@@ -39,7 +44,7 @@ footer {
 }
 .aside a {
   color: wheat;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-decoration: none;
   justify-self: center;
   align-self: center;
@@ -62,14 +67,7 @@ footer {
   height: 100%;
   background: #200;
 }
-
-@media (max-width: 700px) {
-  main,
-  aside {
-  }
-}
-
-/* /layout grid */
+/* /Aside */
 
 
 
@@ -133,7 +131,7 @@ video {
 }
 #synopsis .char5,
 #synopsis .char17 {
-  margin-right: -7px;
+  margin-right: -3px;
 }
 #synopsis .char4,
 #synopsis .char9,
@@ -240,7 +238,7 @@ video {
 
 
 
-/* tickets */
+/* Footer */
 #tickets {
   background: #400;
   color: wheat;
@@ -251,5 +249,8 @@ video {
   text-decoration: none;
   color: #3478c1;
 }
-
-/* /tickets */
+footer p{
+  color: wheat;
+  text-align: center
+}
+/* /Footer */
