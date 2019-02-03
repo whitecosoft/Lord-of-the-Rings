@@ -279,11 +279,10 @@ footer p{
 
 
 
-@media (max-width: 700px){
+@media (max-width: 850px){
 
   body {
     left: 0px;
-    max-width: 700px
   }
   main {
     margin: 0px
@@ -382,7 +381,12 @@ footer p{
     grid-row: 2;
     padding: 20px;
     height: 100%;
+    max-width: 850px;
     grid-template-rows: repeat(4, 500px)
+  }
+  .castBio div{
+    margin: 0 auto;
+    max-width: 850px
   }
   .viggo, .eli, .ian, .holm{
     display: block;

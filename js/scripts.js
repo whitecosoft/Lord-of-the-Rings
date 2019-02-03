@@ -39,7 +39,7 @@ $("header h1").lettering("letters");
 // cast info
 
 $(function(){
-  if($(window).width() >+ 700) {
+  if($(window).width() >= 851) {
 
   $(".frodo").addClass("castcolor2");
   $(".ian").hide();
