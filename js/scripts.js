@@ -37,35 +37,44 @@ $("header h1").lettering("letters");
 
 
 // cast info
-$(".frodo").addClass("castcolor2");
-$(".ian").hide();
-$(".viggo").hide();
-$(".holm").hide();
 
-$(".frodo").click(function() {
-  $(".viggo, .holm, .ian").hide();
-  $(".eli").fadeIn("slow");
+if($(window).width() >= 700) {
   $(".frodo").addClass("castcolor2");
-  $(".aragorn, .bilbo, .gandalf").removeClass("castcolor2");
+  $(".ian").hide();
+  $(".viggo").hide();
+  $(".holm").hide();
+
+  $(".frodo").click(function() {
+    $(".viggo, .holm, .ian").hide();
+    $(".eli").fadeIn("slow");
+    $(".frodo").addClass("castcolor2");
+    $(".aragorn, .bilbo, .gandalf").removeClass("castcolor2");
+  });
+  $(".gandalf").click(function() {
+    $(".viggo, .holm, .eli").hide();
+    $(".ian").fadeIn("slow");
+    $(".gandalf").addClass("castcolor2");
+    $(".bilbo, .frodo, .aragorn").removeClass("castcolor2");
+  });
+  $(".aragorn").click(function() {
+    $(".ian, .holm, .eli").hide();
+    $(".viggo").fadeIn("slow");
+    $(".aragorn").addClass("castcolor2");
+    $(".bilbo, .gandalf, .frodo").removeClass("castcolor2");
+  });
+  $(".bilbo").click(function() {
+    $(".viggo, .ian, .eli").hide();
+    $(".holm").fadeIn("slow");
+    $(".bilbo").addClass("castcolor2");
+    $(".aragorn, .frodo, .gandalf").removeClass("castcolor2");
 });
-$(".gandalf").click(function() {
-  $(".viggo, .holm, .eli").hide();
-  $(".ian").fadeIn("slow");
-  $(".gandalf").addClass("castcolor2");
-  $(".bilbo, .frodo, .aragorn").removeClass("castcolor2");
-});
-$(".aragorn").click(function() {
-  $(".ian, .holm, .eli").hide();
-  $(".viggo").fadeIn("slow");
-  $(".aragorn").addClass("castcolor2");
-  $(".bilbo, .gandalf, .frodo").removeClass("castcolor2");
-});
-$(".bilbo").click(function() {
-  $(".viggo, .ian, .eli").hide();
-  $(".holm").fadeIn("slow");
-  $(".bilbo").addClass("castcolor2");
-  $(".aragorn, .frodo, .gandalf").removeClass("castcolor2");
-});
+} else {
+  $(".frodo").show();
+  $(".ian").show();
+  $(".viggo").show();
+  $(".holm").show();
+}
+
 // /cast info
 
 
