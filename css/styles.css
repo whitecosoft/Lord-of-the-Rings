@@ -83,7 +83,7 @@ footer {
   display: grid;
   grid-template-rows: repeat(5, 20vh);
   padding: 0px 0px;
-  width: 50px;
+  width: 75px;
 }
 .fade {
   width: 75px;
