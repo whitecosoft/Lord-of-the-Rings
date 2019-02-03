@@ -20,6 +20,29 @@ main {
 header {
   width: 100%;
   height: 100vh;
+  text-align: center;
+  color: wheat;
+  font-family: "EB Garamond", serif;
+  font-size: 2em;}
+header .char1,
+header .char5,
+header .char17 {
+  position: relative;
+  font-size: 1.5em;
+  top: 0.2em;
+}
+header .char5,
+header .char17 {
+  margin-right: -5px;
+}
+header .char1{
+  margin-right: 3px;
+}
+header .char4,
+header .char9,
+header .char12,
+header .char16 {
+  margin-right: 5px;
 }
 footer {
   height: 10vw;
@@ -31,7 +54,7 @@ footer {
 
 
 /* Aside */
-.aside {
+#aside {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -42,7 +65,7 @@ footer {
   padding: 0px 0px;
   width: 50px;
 }
-.aside a {
+#aside a {
   color: wheat;
   font-size: 1.2em;
   text-decoration: none;
@@ -116,22 +139,24 @@ footer {
 }
 #synopsis .char1,
 #synopsis .char5,
-#synopsis .char17 {
+#synopsis .char23 {
   position: relative;
   font-size: 1.5em;
   top: 0.2em;
 }
-#synopsis .char5,
-#synopsis .char17 {
-  margin-right: -5px;
+#synopsis .char5 {
+margin-right: 2px;
+}
+#synopsis .char23 {
+  margin-right: -3px;
 }
 #synopsis .char1{
   margin-right: 3px;
 }
 #synopsis .char4,
-#synopsis .char9,
-#synopsis .char12,
-#synopsis .char16 {
+#synopsis .char15,
+#synopsis .char18,
+#synopsis .char22 {
   margin-right: 5px;
 }
 #synopsis h1 {

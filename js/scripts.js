@@ -32,7 +32,7 @@ AOS.init({
 
 // Headers
 $("#synopsis h1").lettering("letters");
-$("#castInfo h1").lettering("letters");
+$("header h1").lettering("letters");
 // /Headers
 
 
