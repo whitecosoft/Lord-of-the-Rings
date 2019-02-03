@@ -23,7 +23,8 @@ header {
   text-align: center;
   color: wheat;
   font-family: "EB Garamond", serif;
-  font-size: 2em;}
+  font-size: 2em;
+}
 header .char1,
 header .char5,
 header .char17 {
@@ -277,151 +278,121 @@ footer p{
 
 @media (max-width: 700px){
 
-    body {
-      background: url(https://wallpapertag.com/wallpaper/full/9/b/b/786986-gorgerous-lotr-background-2560x1600-for-iphone-6.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      height: 100vh;
-      top: 0;
-      left: 0px;
-      position: relative;
-      max-width: 700px
-    }
-    main {
-      margin: 0px
-    }
-    header {
-      font-size: 1em;}
-    footer {
-      height: 30vw;
-      background: #300;
-    }
-    /* /layout grid */
-    
-    
-    /* Aside */
-    #aside {
-      display: none;
-    }
-    /* /Aside */
-    
-    
-    
-    /* video */
-
-    .mejs__overlay, .mejs__layer{
-      height: 50vh !important;
-      width: 100vw !important;
-    }
-    .mejs__mediaelementplayer, .mejs__container, video{
-      height: 50vh !important;
-      width: 100vw !important;
-    }
-    #trailer{
-      max-height: 50vh;
-    }
-    /* /video */
-    
-    
-    
-    /* synopsis */
-    #synopsis{
-      display: block;
-      background: #400;
-      padding: 20px;
-      justify-content: center;
-      align-content: center
-    }
-    .poster{
-      display: none;
-    }
-    .summary{
-      justify-self: left
-    }
-    #synopsis .char1,
-    #synopsis .char5,
-    #synopsis .char23 {
-      position: relative;
-      font-size: 1em;
-      top: 0em;
-    }
-    #synopsis .char5 {
-    margin-right: 0px;
-    }
-    #synopsis .char23 {
-      margin-right: 0px;
-    }
-    #synopsis .char1{
-      margin-right: 0px;
-    }
-    #synopsis .char4,
-    #synopsis .char15,
-    #synopsis .char18,
-    #synopsis .char22 {
-      margin-right: 0px;
-    }
-    #synopsis h1 {
-      text-align: center;
-      color: wheat;
-      font-family: "EB Garamond", serif;
-      font-size: 1.5em;
-    }
-    #synopsis p {
-      max-width: 700px;
-      margin: 0 auto;
-      color: wheat;
-      line-height: 1.5em;
-    }
-    .tag {
-      text-align: right;
-      padding-top: 10px;
-    }
-    /* /synopsis */
-    
-    
-    
-    /* castInfo */
-    #castInfo {
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: 10vh 3200px;
-      background: #400;
-      margin-bottom: 0;
-    }
-    #castInfo h1 {
-      grid-column: 1;
-      grid-row: 1;
-    }
-    .cast {
-      display: none;
-    }
-    .castBio {
-      grid-row: 2;
-      padding: 20px;
-      height: 3200px;
-      grid-template-rows: repeat(4, 500px)
-    }
-
-    .viggo, .eli, .ian, .holm{
-      display: block;
-      margin-bottom: 70px;
-    }
-    /* /castInfo */
-    
-    
-    
-    /* Footer */
-    #tickets {
-      padding: 20px;
-      background: #300;
-    }
-    footer{
-      margin: 0px;
-      background: #000;
-    }
-
-    /* /Footer */
+  body {
+    left: 0px;
+    max-width: 700px
   }
+  main {
+    margin: 0px
+  }
+  header {
+    font-size: 1em;
+  }
+  header h1{
+    padding: 20px
+  }
+  footer {
+    height: 30vw;
+    margin: 0px;
+    background: #000;
+  }
+  /* /layout grid */
+  
+  
+
+  /* Aside */
+  #aside {
+    display: none;
+  }
+  /* /Aside */
+  
+  
+  
+  /* video */
+  .mejs__overlay, .mejs__layer{
+    height: 50vh !important;
+    width: 100vw !important;
+  }
+  .mejs__mediaelementplayer, .mejs__container, video{
+    height: 50vh !important;
+    width: 100vw !important;
+  }
+  #trailer{
+    max-height: 50vh;
+  }
+  /* /video */
+  
+  
+  
+  /* synopsis */
+  #synopsis{
+    display: block;
+    padding: 20px;
+  }
+  .poster{
+    display: none;
+  }
+  #synopsis .char1,
+  #synopsis .char5,
+  #synopsis .char23 {
+    font-size: 1em;
+    top: 0em;
+  }
+  #synopsis .char5 {
+  margin-right: 0px;
+  }
+  #synopsis .char23 {
+    margin-right: 0px;
+  }
+  #synopsis .char1{
+    margin-right: 0px;
+  }
+  #synopsis .char4,
+  #synopsis .char15,
+  #synopsis .char18,
+  #synopsis .char22 {
+    margin-right: 0px;
+  }
+  #synopsis h1 {
+    font-size: 1.5em;
+    padding: 0px 40px;
+  }
+  /* /synopsis */
+  
+  
+  
+  /* castInfo */
+  #castInfo {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh 3200px;
+    background: #400;
+  }
+  #castInfo h1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .cast {
+    display: none;
+  }
+  .castBio {
+    grid-row: 2;
+    padding: 20px;
+    height: 3200px;
+    grid-template-rows: repeat(4, 500px)
+  }
+  .viggo, .eli, .ian, .holm{
+    display: block;
+    margin-bottom: 70px;
+  }
+  /* /castInfo */
+  
+  
+  
+  /* Footer */
+  #tickets {
+    padding: 20px;
+    background: #300;
+  }
+  /* /Footer */
 }
