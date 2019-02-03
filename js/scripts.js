@@ -38,7 +38,7 @@ $("header h1").lettering("letters");
 
 // cast info
 
-if($(window).width() >= 700) {
+if($(window).width() > 700) {
   $(".frodo").addClass("castcolor2");
   $(".ian").hide();
   $(".viggo").hide();
@@ -67,9 +67,10 @@ if($(window).width() >= 700) {
     $(".holm").fadeIn("slow");
     $(".bilbo").addClass("castcolor2");
     $(".aragorn, .frodo, .gandalf").removeClass("castcolor2");
-});
-} else {
-  $(".frodo").hide();
+  });
+}
+else {
+  $(".eli").show();
   $(".ian").show();
   $(".viggo").show();
   $(".holm").show();

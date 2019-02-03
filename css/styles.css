@@ -101,11 +101,14 @@ footer {
 }
 .mejs__overlay, .mejs__layer{
   height: 90vh !important;
-  width: 90vw !important;
+  width: 100% !important;
 }
 .mejs__mediaelementplayer, .mejs__container, video{
   height: 90vh !important;
-  width: 90vw !important;
+  width: 100% !important;
+}
+.mejs__time-rail{
+  80%
 }
 #trailer{
   max-width: 100%;
