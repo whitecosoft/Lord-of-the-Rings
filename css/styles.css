@@ -344,29 +344,29 @@ footer p{
     #synopsis .char5,
     #synopsis .char23 {
       position: relative;
-      font-size: 1.5em;
-      top: 0.2em;
+      font-size: 1em;
+      top: 0em;
     }
     #synopsis .char5 {
-    margin-right: 2px;
+    margin-right: 0px;
     }
     #synopsis .char23 {
-      margin-right: -3px;
+      margin-right: 0px;
     }
     #synopsis .char1{
-      margin-right: 3px;
+      margin-right: 0px;
     }
     #synopsis .char4,
     #synopsis .char15,
     #synopsis .char18,
     #synopsis .char22 {
-      margin-right: 5px;
+      margin-right: 0px;
     }
     #synopsis h1 {
       text-align: center;
       color: wheat;
       font-family: "EB Garamond", serif;
-      font-size: 1em;
+      font-size: 1.5em;
     }
     #synopsis p {
       max-width: 700px;
@@ -385,74 +385,28 @@ footer p{
     /* castInfo */
     #castInfo {
       display: grid;
-      grid-template-columns: 50% 50%;
-      grid-template-rows: 5% 15% 80%;
+      grid-template-columns: 100%;
+      grid-template-rows: 10vh 3200px;
       background: #400;
       margin-bottom: 0;
     }
     #castInfo h1 {
-      grid-column: 1 / 3;
-      text-align: center;
-      color: wheat;
-      font-family: "EB Garamond", serif;
+      grid-column: 1;
+      grid-row: 1;
     }
     .cast {
-      grid-column: 1 / 3;
-      grid-row: 2;
-      padding: 5px;
-      color: lightgray;
-      text-align: center;
-      grid-template-columns: repeat(4, 25vw)
-    }
-    .cast h3,
-    .cast h5 {
-      margin: 5px 0px;
-    }
-    .frodo,
-    .gandalf,
-    .bilbo,
-    .aragorn {
-      margin: 0px;
+      display: none;
     }
     .castBio {
-      grid-row: 3;
-      overflow: hidden;
-      color: wheat;
-      max-width: 600px;
-      height: 70vh;
-      padding: 25px;
-    }
-    .castBio div {
-      background-size: cover;
-      height: 500px;
-      max-width: 500px;
-      max-height: 50vh
-    }
-    .castBio h2 {
-      margin-bottom: 5px;
-    }
-    .castBio h4 {
-      margin-top: 0px;
-    }
-    .castBio p {
-      line-height: 1.5em;
+      grid-row: 2;
+      padding: 20px;
+      height: 3200px;
+      grid-template-rows: repeat(4, 500px)
     }
 
-    .ianImg {
-      background: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/11/27/10/gandalf-ian-mckellen.jpg)
-        no-repeat 50% 50%;
-    }
-    .eliImg {
-      background: url(https://www.syfy.com/sites/syfy/files/styles/1200x680/public/wire/legacy/images/frodoandtheonering.jpg)
-        no-repeat 50% 50%;
-    }
-    .viggoImg {
-      background: url(https://assets1.ignimgs.com/2018/06/19/aragorn-1529432894864_1280w.jpg)
-        no-repeat 50% 50%;
-    }
-    .holmImg {
-      background: url(http://reasonish.com/wp-content/uploads/2017/10/Ian-Holm-Bilbo.jpg)
-        no-repeat 50% 50%;
+    .viggo, .eli, .ian, .holm{
+      display: block;
+      margin-bottom: 70px;
     }
     /* /castInfo */
     
@@ -460,7 +414,12 @@ footer p{
     
     /* Footer */
     #tickets {
-      padding: 50px;
+      padding: 20px;
+      background: #300;
+    }
+    footer{
+      margin: 0px;
+      background: #000;
     }
 
     /* /Footer */

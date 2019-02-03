@@ -69,7 +69,7 @@ if($(window).width() >= 700) {
     $(".aragorn, .frodo, .gandalf").removeClass("castcolor2");
 });
 } else {
-  $(".frodo").show();
+  $(".frodo").hide();
   $(".ian").show();
   $(".viggo").show();
   $(".holm").show();
