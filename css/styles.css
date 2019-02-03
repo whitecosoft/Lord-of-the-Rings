@@ -63,7 +63,7 @@ footer {
   display: grid;
   grid-template-rows: repeat(5, 20vh);
   padding: 0px 0px;
-  width: 50px;
+  width: 75px;
 }
 #aside a {
   color: wheat;
@@ -368,7 +368,7 @@ footer p{
   #castInfo {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10vh 3200px;
+    grid-template-rows: 10vh 100%;
     background: #400;
   }
   #castInfo h1 {
@@ -381,7 +381,7 @@ footer p{
   .castBio {
     grid-row: 2;
     padding: 20px;
-    height: 3200px;
+    height: 100%;
     grid-template-rows: repeat(4, 500px)
   }
   .viggo, .eli, .ian, .holm{
@@ -398,4 +398,10 @@ footer p{
     background: #300;
   }
   /* /Footer */
+}
+
+@media (max-height: 500px){
+  #aside a{
+    font-size: 1em;
+  }
 }

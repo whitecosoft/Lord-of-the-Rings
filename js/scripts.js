@@ -38,7 +38,9 @@ $("header h1").lettering("letters");
 
 // cast info
 
-if($(window).width() > 700) {
+$(function(){
+  if($(window).width() >+ 700) {
+
   $(".frodo").addClass("castcolor2");
   $(".ian").hide();
   $(".viggo").hide();
@@ -74,7 +76,8 @@ else {
   $(".ian").show();
   $(".viggo").show();
   $(".holm").show();
-}
+};
+});
 
 // /cast info
 
